@@ -1,8 +1,11 @@
 # VRising Docker Dedicated Server
 ## What is it
-> It's a Docker container to host a dedicated server for VRising.
->
-> On my system it takes around 1 minute for the server to fully start but this will vary depending on your internet speed and computer.
+It's a Docker container to host a dedicated server for VRising.
+
+On my system it takes around 1 minute for the server to fully start but this will vary depending on your internet speed and computer.
+
+If you already have your own server configurations you can replace them on the settings folder and when the server runs, it will run with you configurations instead of the default ones
+
 
 # How to build and run
 ## docker
