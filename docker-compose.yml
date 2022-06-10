@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  vrising:
+    build: .
+    image: tvnvt/vrising-server
+    ports:
+      - "9876:9876/udp"
+      - "9877:9877/udp"
+    volumes:
+      - /data/opt/vrising:/data
+      - vrisingVolume:/apps/vrising
+volumes:
+  vrisingVolume:
