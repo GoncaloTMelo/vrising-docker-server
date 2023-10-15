@@ -1,10 +1,10 @@
 #!/bin/bash
-export WINEARCH=win64
+template_file=/tmp/settings/ServerHostSettings.json.template
+settings_file=/data/Settings/ServerHostSettings.json
 
-steamcmd +force_install_dir "/apps/vrising" +login anonymous +app_update 1829350 +quit
-
-[[ -d /data/Settings ]] || cp /tmp/settings /data/Settings -r
+steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir "/server" +login anonymous +app_update 1829350 validate +quit
 
 
-Xvfb :0 -screen 0 1024x768x16 &
-DISPLAY=:0.0 wine /apps/vrising/VRisingServer.exe -persistentDataPath "Z:/data"
+cd /server
+Xvfb :0 -screen 0 1024x768x16 & DISPLAY=:0.0 wine ./VRisingServer.exe -persistentDataPath /data
+# /bin/bash

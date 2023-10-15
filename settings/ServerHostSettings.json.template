@@ -1,0 +1,28 @@
+﻿{
+  "Name": "SERVER_NAME",
+  "Description": "SERVER_DESCRIPTION",
+  "Port": SERVER_PORT,
+  "QueryPort": SERVER_QUERY_PORT,
+  "MaxConnectedUsers": SERVER_MAX_CONNECTED_USERS,
+  "MaxConnectedAdmins": SERVER_MAX_CONNECTED_ADMINS,
+  "ServerFps": 30,
+  "SaveName": "SERVER_SAVE_NAME",
+  "Password": "SERVER_PASSWORD",
+  "Secure": true,
+  "ListOnSteam": SERVER_LIST_ON_STEAM,
+  "ListOnEOS": false,
+  "AutoSaveCount": SERVER_AUTO_SAVE_COUNT,
+  "AutoSaveInterval": SERVER_AUTO_SAVE_INTERVAL,
+  "CompressSaveFiles": SERVER_COMPRESS_SAVE_FILES,
+  "GameSettingsPreset": "SERVER_GAME_SETTINGS_PRESET",
+  "AdminOnlyDebugEvents": true,
+  "DisableDebugEvents": false,
+  "API": {
+    "Enabled": false
+  },
+  "Rcon": {
+    "Enabled": SERVER_RCON_ENABLED,
+    "Port": SERVER_RCON_PORT,
+    "Password": "SERVER_RCON_PASSWORD"
+  }
+}
